@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK Resort</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .contact {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ddd;
+        }
+        .booking {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>Welcome to BK Resort</header>
+    <div class="container">
+        <h2>About BK Resort</h2>
+        <p>Experience the peaceful countryside with fresh air, organic farming, and a cozy stay. Available at low costs.</p>
+        <p>Located at Chinna Kalwala, Karimnagar.</p>
+        <p>Owner: Vamshi Krishna Boorla</p>
+        
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="farmhouse.jpg" alt="Farmhouse Image">
+        </div>
+    </div>
+    
+    <div class="booking">
+        <h2>Book Your Stay</h2>
+        <form>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required><br><br>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required><br><br>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required><br><br>
+            <label for="cost">Estimated Cost (₹7000 per day):</label>
+            <input type="text" id="cost" name="cost" value="7000" readonly><br><br>
+            <p><strong>Note:</strong> No alcohol is permitted. Rules and regulations must be read and signed before entering the farmhouse.</p>
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@aadhyataxsolutions.com</p>
+        <p>Phone: +919966474222</p>
+    </div>
+    
+    <footer>BK Resort &copy; 2025</footer>
+</body>
+</html>
